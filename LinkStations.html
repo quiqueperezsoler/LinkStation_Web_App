@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Most Suitable Link Stations</title>
+	<link rel="stylesheet" type="text/css" href="Style.css" />
+	<script src="LinkStations.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Link Stations - Find the Most Suitable Link Station</h1>
+		<div id="signature">
+			<i>
+				<b>
+					Enrique Perez Soler<br />
+					quiqueperezsoler@gmail.com<br />
+				</b>
+				Link Stations Web Application
+			</i>
+		</div>
+		<div id="subContainer" class="row">
+			<div id="subContainerLeft" class="col">
+				<i>
+					This program solves the most suitable link station for any given point in the 2D space.
+					It takes into account the reach and power of the link stations which is given in the form
+					[x, y, r] with x = position in the X-axis, y= position in the Y-axis, r = reach.<br />
+					<br />
+					The Link Stations are located as follows:<br />
+					<br />
+					Link Station A = [0, 0, 10]<br />
+					<br />
+					Link Station B = [20, 20, 5]<br />
+					<br />
+					Link Station C = [10, 0, 12]
+				</i>
+			</div>
+			<div id="subContainerRight" class="col">
+				<div id="containerX" class="center">
+					<b>
+						X Coordinate : <input type="text" id="pointX" />
+					</b>
+				</div>
+				<div id="containerY" class="center">
+					<b>
+						Y Coordinate: <input type="text" id="pointY" />
+					</b>
+				</div>
+				<div id="solveButton" class="center">
+					<input type="button" class="buttonActive" value="Solve" onclick="solveLinkStation(document.getElementById('pointX').value, document.getElementById('pointY').value)" />
+				</div>
+				<div id="resize">
+					You can resize pulling from here<br/>
+					(doesn't work for Internet Explorer)
+				</div>
+			</div>
+
+		</div>
+		<div id="results"class="row">
+			<p id="distances"class="col"></p>
+			<p id="power"class="col"></p>
+		</div>
+		<div id="best"></div>
+	</div>
+</body>
+</html>

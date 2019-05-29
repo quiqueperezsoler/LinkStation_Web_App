@@ -1,0 +1,137 @@
+﻿body {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(to top right, royalblue, deepskyblue);
+	background-color: royalblue;
+}
+
+h1 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-variant: small-caps;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#signature {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.row {
+	display: flex;
+	resize: vertical;
+	overflow: auto;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.col {
+	flex: 1;
+	padding: 1em;
+	border: solid;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#container {
+	position: relative;
+	left: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#subContainerLeft {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+#subContainerRight {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+.center {
+	text-align: center;
+	padding: 8px;
+}
+
+#containerX {
+	margin: auto;
+}
+
+#containerY {
+	margin: auto;
+}
+
+#results {
+	display: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#best {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px rgb(0, 255, 33);
+}
+
+#solveButton {
+	text-shadow: 2px 2px 4px #000000;
+}
+
+input[type=button] {
+	background-color: royalblue;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonActive:active {
+	background-color: deepskyblue;
+	transform: translateY(4px);
+}
+
+#resize {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	text-align: right;
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+
+input[type=text] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Responsive layout: when the screen is less than 400px wide, stack the divs on top of each other */
+@media screen and (max-width: 800px) {
+	.row {
+		display: block;
+	}
+
+	#signature {
+		position: relative;
+		display: block;
+		text-align: center;
+		top:auto;
+		bottom: 0;
+		right: 0;
+	}
+}
+
